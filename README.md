@@ -1,1 +1,1 @@
-# eodb-website
+# EODB website
