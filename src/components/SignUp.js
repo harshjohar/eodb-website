@@ -1,7 +1,7 @@
-function SignUp() {
+function Register() {
   return (
     <div>SignUp</div>
   )
 }
 
-export default SignUp
+export default Register
