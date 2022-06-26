@@ -1,16 +1,15 @@
-import { Route, Routes } from "react-router-dom";
+import { useState } from "react";
 import PageLayout from "../common/PageLayout";
 import Login from "../components/Login";
 import Register from "../components/SignUp";
 
 function AuthScreen() {
+    const [screen, setScreen] = useState(true); // true = login, false = register
     return (
         <PageLayout>
             <div>
-                <Routes>
-                    <Route path="login" element={<Login />} />
-                    <Route path="register" element={<Register />} />
-                </Routes>
+                <h1 onClick={() => setScreen(!screen)}>AuthScreen</h1>
+                {screen ? <Login /> : <Register />}
             </div>
         </PageLayout>
     );
