@@ -1,6 +1,10 @@
+import PageLayout from "../common/PageLayout"
+
 function AuthScreen() {
   return (
-    <div>AuthScreen</div>
+    <PageLayout>
+      <div>AuthScreen</div>
+    </PageLayout>
   )
 }
 

@@ -1,6 +1,10 @@
+import PageLayout from "../common/PageLayout"
+
 function HomeScreen() {
   return (
-    <div>HomeScreen</div>
+    <PageLayout>
+      <div>Homescreen</div>
+    </PageLayout>
   )
 }
 
