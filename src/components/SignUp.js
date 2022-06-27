@@ -58,20 +58,17 @@ function Register() {
     sib.classList.add("border-[#E75A7C]");
   }
   return (
-    <div className="flex justify-center items-center overflow-scroll  w-screen">
-      <div className="p-10  w-2/3 border rounded-lg backpanel">
+    <div className="flex justify-center items-center overflow-scroll bg-green-200 w-screen">
+      <div className="p-10  w-2/3 border rounded-lg backdrop-blur-2xl bg-white/50 ">
         <div className="border h-full w-full rounded-lg bg-white flex flex-col">
           <div className="flex justify-between h-20 items-center  mx-10">
             <div className="flex space-x-24 justify-center items-center">
               <button id="signupbtn" onClick={signup} className=" border-b-2 border-[#E75A7C] hover:border-[#E75A7C] hover:text-[#E75A7C] authtext text-[#E75A7C]">SIGN UP</button>
               <button id='signinbtn' onClick={signin} className='border-b-2 border-transparent hover:border-[#E75A7C] hover:text-[#E75A7C]'>SIGN IN</button>
             </div>
-            <div>
-              <img className="h-6" alt='' src="https://img.icons8.com/fluency-systems-regular/48/000000/delete-sign--v1.png" />
-            </div>
           </div>
           <div className="flex ">
-            <div id='signup-class' className="left border w-1/2 h-[400px]">
+            <div id='signup-class' className="left border-r-2 w-full md:w-1/2 h-[400px]">
               <div className="m-4">
                 <label className="mx-5 text-[12px] text-gray-500" for="fname">First Name*</label><br />
                 <input className="mx-5 border-[1px] border-gray-300 rounded-md px-6 py-1 outline-none" type="text" id="fname" name="" /><br />
@@ -87,7 +84,7 @@ function Register() {
               </div>
 
             </div>
-            <div id='signin-class' className="left hidden border w-1/2 h-[400px]">
+            <div id='signin-class' className="left hidden border-r-2 w-full md:w-1/2 h-[400px]">
             <div className='mx-14 my-8 space-x-6'>
               <button onClick={numberlogin} id="numberclick" className=" border-b-2 text-[14px] border-[#E75A7C] hover:border-[#E75A7C] hover:text-[#E75A7C] authtext text-[#E75A7C]">Phone Number</button>
               <button onClick={emaillogin} id="emailclick" className='border-b-2 border-transparent hover:border-b-2 text-[14px] hover:border-[#E75A7C] hover:text-[#E75A7C]'>Email</button>
@@ -108,7 +105,7 @@ function Register() {
             </div>
 
           </div>
-            <div className="right w-1/2 border flex flex-col  items-center h-[400px]">
+            <div className="right hidden w-1/2 md:flex flex-col  items-center h-[400px]">
               <div className='my-5'>
                 <img src={plant} alt="" />
               </div>

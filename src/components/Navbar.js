@@ -8,7 +8,7 @@ function Navbar() {
                     <img
                         src="/assets/images/chandigarh_emblem.png"
                         alt=""
-                        className="w-20 cursor-pointer object-contain"
+                        className="w-10 scale-[1.6] cursor-pointer object-contain"
                     />
                 </Link>
             </div>

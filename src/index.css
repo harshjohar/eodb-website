@@ -1,6 +1,6 @@
 .backpanel {
-    background: rgba(194, 191, 191, 0.8);
-  backdrop-filter: saturate(180%) blur(10px);
+    /* background: rgba(194, 191, 191, 0.8);
+  backdrop-filter: saturate(180%) blur(10px); */
 }
 
 /* .authtext {
