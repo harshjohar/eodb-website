@@ -1,5 +1,3 @@
-import plant from '../Plant.png'
-
 function Register() {
   const emaillogin = () => {
     var x = document.getElementById("email-class") ;
@@ -58,7 +56,7 @@ function Register() {
     sib.classList.add("border-[#E75A7C]");
   }
   return (
-    <div className="flex justify-center items-center overflow-scroll bg-green-200 w-screen">
+    <div className="flex justify-center items-center overflow-scroll bg-green-200 w-full h-full">
       <div className="p-10  w-2/3 border rounded-lg backdrop-blur-2xl bg-white/50 ">
         <div className="border h-full w-full rounded-lg bg-white flex flex-col">
           <div className="flex justify-between h-20 items-center  mx-10">
@@ -107,7 +105,7 @@ function Register() {
           </div>
             <div className="right hidden w-1/2 lg:flex flex-col  items-center h-[400px]">
               <div className='my-5'>
-                <img src={plant} alt="" />
+                <img src={"assets/images/plant.png"} alt="" />
               </div>
               <div className='w-60'>
                 <span className='w-20'>by clicking submit you agree to the

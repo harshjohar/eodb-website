@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import menu from '../menu.png'
 
 function Navbar() {
     const [menustate, setMenustate] = useState(false) ;
@@ -39,7 +38,7 @@ function Navbar() {
                 <Link  to={"/contact"}>Contact</Link>
             </div>
             <div  className="lg:hidden z-50">
-                <img onClick={openmenu} className="h-8 my-5 mx-2" alt="" src={menu}/>
+                <img onClick={openmenu} className="h-8 my-5 mx-2" alt="" src={"assets/images/menu.png"}/>
             </div>
         </header>
     );
