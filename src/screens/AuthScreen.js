@@ -7,9 +7,8 @@ function AuthScreen() {
     const [screen, setScreen] = useState(true); // true = login, false = register
     return (
         <PageLayout>
-            <div>
-                <h1 onClick={() => setScreen(!screen)}>AuthScreen</h1>
-                {screen ? <Login /> : <Register />}
+            <div className="">
+                <Register/>
             </div>
         </PageLayout>
     );
