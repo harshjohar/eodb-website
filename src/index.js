@@ -8,6 +8,7 @@ import Error from "./screens/Error";
 import { Provider } from "react-redux";
 import { store } from "./redux/store";
 import AboutScreen from "./screens/AboutScreen";
+import ContactScreen from "./screens/ContactScreen";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,7 +18,8 @@ root.render(
                 <Routes>
                     <Route index element={<HomeScreen />} />
                     <Route path="/" element={<HomeScreen />} />
-                    <Route path="/about" element={<AboutScreen />} />
+                    <Route path="about" element={<AboutScreen />} />
+                    <Route path="contact" element={<ContactScreen/>}/>
                     <Route path="auth" element={<AuthScreen />} />
                     <Route path="*" element={<Error />} />
                 </Routes>
