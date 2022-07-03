@@ -56,10 +56,10 @@ function Register() {
     sib.classList.add("border-[#E75A7C]");
   }
   return (
-    <div className="flex justify-center items-center overflow-scroll bg-green-200 w-full h-full">
+    <div className="flex justify-center items-center overflow-scroll bg-gray-200 w-full h-full">
       <div className="p-10  w-2/3 border rounded-lg backdrop-blur-2xl bg-white/50 ">
         <div className="border h-full w-full rounded-lg bg-white flex flex-col">
-          <div className="flex justify-between h-20 items-center  mx-10">
+          <div className="flex justify-between h-20 items-center  mx-10 rounded-lg">
             <div className="flex space-x-24 justify-center items-center">
               <button id="signupbtn" onClick={signup} className=" border-b-2 border-[#E75A7C] hover:border-[#E75A7C] hover:text-[#E75A7C] authtext text-[#E75A7C]">SIGN UP</button>
               <button id='signinbtn' onClick={signin} className='border-b-2 border-transparent hover:border-[#E75A7C] hover:text-[#E75A7C]'>SIGN IN</button>

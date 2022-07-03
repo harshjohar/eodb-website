@@ -15,7 +15,7 @@ function Navbar() {
         }
     }
     return (
-        <header className="flex justify-between z-50 bg-teal-900 px-5 lg:px-20">
+        <header className="flex justify-between lg:justify-start lg:space-x-8 z-50 bg-teal-900 px-5 lg:px-20">
             <div className="flex items-center z-50 space-x-20 py-4 ">
                 <Link to={"/"} className="flex space-x-6">
                     <img
@@ -30,7 +30,7 @@ function Navbar() {
             </div>
             <div className="navbar-links w-full lg:w-fit transition-all items-center -translate-y-96 lg:translate-y-0 absolute flex right-0 top-[75px] text-md bg-teal-900 z-20 space-y-4 py-4 px-7 lg:space-y-0 lg:px-0 lg:static flex-col space-x-6 lg:text-sm  lg:flex-row text-white">
             <Link to={"/"}>Home</Link>
-                <Link className="hover:bg-teal-500 " to={"/about"}>About Us</Link>
+                <Link className="" to={"/about"}>About Us</Link>
                 <Link to={"/schemes"}>Schemes</Link>
                 <Link to={"/udyam"}>Udyam registration</Link>
                 <Link to={"/eodb"}>EODB</Link>
